@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nearby Places Map</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .map-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            max-width: 80%;
+            height: auto;
+            border: 3px solid #ccc;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Theni</h1>
+    <h1>Kailash Prabhu S(212224240068)</h1>
+    <div class="map-container">
+        <img src="/static/images/map.png" usemap="#nearme">
+    </div>
+
+    <map name="nearme">
+        <area shape="rect" coords="34,44,270,350" alt="Place1" href="/place1/">
+        <area shape="rect" coords="290,172,333,250" alt="Place2" href="/place2/">
+        <area shape="rect" coords="337,300,550,450" alt="Place3" href="/place3/">
+        <area shape="rect" coords="100,400,250,500" alt="Place4" href="/place4/">
+        <area shape="rect" coords="400,100,600,250" alt="Place5" href="/place5/">
+    </map>
+</body>
+</html>
